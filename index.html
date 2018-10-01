@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="scripts.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container-fluid h-100">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-block">
+            <a class="navbar-brand" href="#">Navigator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="My%20Photo.html">My Photo</a>
+                    <a class="nav-item nav-link" href="publication.html">Publication</a>
+                    <a class="nav-item nav-link disabled" href="Research.html">Research</a>
+                    <a class="nav-item nav-link disabled" href="Interests.html">Interests</a>
+                    <a class="nav-item nav-link disabled" href="Contact%20me.html">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row h-100 ">
+            <div class="col-md-2 left-back d-none d-md-block">
+                <div class = "navigator">
+                    <nav>
+                        <ul>
+                            <h1>Navigator</h1>
+                            <a href="index.html" class="navigator">Home</a>
+                            <br />
+                            <a href="My%20Photo.html" class="navigator">My Photo</a>
+                            <br />
+                            <a href="publication.html" class="navigator">Publication</a>
+                            <br />
+                            <a href="Research.html" class="navigator">Research</a>
+                            <br />
+                            <a href="Interests.html" class="navigator">Interests</a>
+                            <br />
+                            <a href="Contact%20me.html" class="navigator">Contact Me</a>
+                            <br />
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="time">
+                    <div id="time" style="width:200px;height: 30px;">Time</div>
+                </div>
+                
+                <div>
+                    <img src="img/dq.png">
+                </div>
+
+                <div class="INFSCI">
+                    <p>INFSCI 2560</p>
+                    <p>Ruizhi Pu</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-10 h-100 right card">
+                <h5 class="card-header indexheader" >Manifesto of the Communist Party</h5>
+                <p class = "indextext card-text">
+                    A spectre is haunting Europe -- the spectre of communism.
+                    All the powers of old Europe have entered into a holy alliance to exorcise this spectre: Pope and Tsar, Metternich and Guizot, French Radicals and German police-spies.
+                    Where is the party in opposition that has not been decried as communistic by its opponents in power?
+                    Where is the opposition that has not hurled back the branding reproach of communism, against the more advanced opposition parties, as well as against its reactionary adversaries?
+                    Two things result from this fact:</p>
+                <p class = "indextext card-text">Communism is already acknowledged by all European powers to be itself a power.</p>
+                <p class = "indextext card-text">It is high time that Communists should openly,
+                    in the face of the whole world, publish their views, their aims, their tendencies, and meet this nursery tale of the spectre of communism with a manifesto of the party itself.</p>
+                <p class = "indextext card-text">
+                    To this end, Communists of various nationalities have assembled inLondonand sketched the following manifesto,
+                    to be published in the English, French, German, Italian, Flemish and Danish languages.
+
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+<script>
+    var i =0;
+    function time(){
+        var date = new Date();
+        var hour=date.getHours();
+        var minute=date.getMinutes();
+        var second=date.getSeconds();
+        document.getElementById("time").innerHTML=hour+" h: "+minute+" m: "+second+" s";
+    }
+    setInterval(time,1000);
+</script>
+
+</html>

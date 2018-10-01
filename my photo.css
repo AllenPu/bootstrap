@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+}
+
+.back{
+    height: 100%;
+    padding: 0;
+}
+
+.cbody{
+    background-color: blanchedalmond;
+}

@@ -14,15 +14,15 @@ function wrong() {
 function getNowFormatDate() {
     var date = new Date();
     var month = date.getMonth() + 1;
-    var strDate = date.getDate();
+    var currDate = date.getDate();
     if (month >= 1 && month <= 9) {
         month = "0" + month;
     }
-    if (strDate >= 0 && strDate <= 9) {
-        strDate = "0" + strDate;
+    if (currDate >= 0 && currDate <= 9) {
+        currDate = "0" + currDate;
     }
-    var currentdate = date.getFullYear() + "-" + month + "-" + strDate + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    return currentdate;
+    var date = date.getFullYear() + "-" + month + "-" + currDate + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    return date;
 }
 
 function weather(){
